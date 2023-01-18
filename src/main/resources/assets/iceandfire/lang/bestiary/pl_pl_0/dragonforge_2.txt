@@ -1,0 +1,41 @@
+<recipe><iceandfire:chain 0 minecraft:air 0 minecraft:chain 0 minecraft:air 0 minecraft:chain 0 minecraft:air 0 minecraft:chain 0 minecraft:air 0 4 10 1>.
+
+
+
+
+
+
+
+
+Łańcuchy mogą być tworzone w celu schwytania
+dzikich smoków i wszelkich innych potworów.
+Można je przywiązywać do ścian. Smoki
+zniszczą większość ścian, jak np.
+brukowane ściany, więc ci, którzy chcą
+zasilić swój piec smokiem
+potrzebują ścian z kości smoka.
+<recipe><iceandfire:dragon_bone_wall 0 minecraft:air 0 minecraft:air 0 minecraft:air 0 iceandfire:dragonbone 0 iceandfire:dragonbone 0 iceandfire:dragonbone 0 iceandfire:dragonbone 0 iceandfire:dragonbone 0 iceandfire:dragonbone 0 25 145 0.75>.
+
+
+
+
+
+Aby prawidłowo zasilić kuźnię, należy
+umieścić przykutego lub oswojonego smoka
+bezpośrednio przed otworem.
+Wtedy smok zacznie
+oddychać płomieniem lub mrozem tak długo, jak
+w kuźni znajdują się ważne przedmioty.
+
+
+Większość przedmiotów, po umieszczeniu w kuźni,
+zostanie zamienione w popiół lub smoczy lód. 
+Ale umieszczenie sztabki żelaza i smoczej krwi 
+(ognista krew dla ognistych kuźni, lodowa krew dla lodowych) 
+da w efekcie potężny alchemiczny metal.
+<item><minecraft:iron_ingot 0 110 78 1>.
+<item><iceandfire:fire_dragon_blood 0 130 78 1>.
+<item><iceandfire:dragonsteel_fire_ingot 0 170 78 1>.
+<item><minecraft:iron_ingot 0 110 92 1>
+<item><iceandfire:ice_dragon_blood 0 130 92 1>
+<item><iceandfire:dragonsteel_ice_ingot 0 170 92 1>
