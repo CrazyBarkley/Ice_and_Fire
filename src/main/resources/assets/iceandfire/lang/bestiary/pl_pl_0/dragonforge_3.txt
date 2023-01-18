@@ -1,0 +1,47 @@
+Rezultatem jest metal znany
+jako smocza stal. Smocza stal jest
+jednym z najsilniejszych i najbardziej
+wszechstronnych materiałów znanych człowiekowi.
+Można z niego zrobić narzędzia, zbroje,
+i smoczą zbroję.
+<item><iceandfire:dragonsteel_fire_sword 0 10 40 1>.
+<item><iceandfire:dragonsteel_fire_pickaxe 0 26 40 1>.
+<item><iceandfire:dragonsteel_fire_axe 0 42 40 1>
+<item><iceandfire:dragonsteel_fire_shovel 0 58 40 1> <item><iceandfire:dragonsteel_fire_shovel 0 58 40 1>
+<item><iceandfire:dragonsteel_fire_hoe 0 74 40 1>
+<item><iceandfire:dragonsteel_fire_hełm 0 20 60 1>
+<item><iceandfire:dragonsteel_fire_chestplate 0 35 60 1>
+<item><iceandfire:dragonsteel_fire_legginsy 0 50 60 1>
+<item><iceandfire:dragonsteel_fire_boots 0 65 60 1>
+
+
+
+
+
+
+
+
+Pamiętaj, że smocze kuźnie
+mogą być zbudowane z myślą o lodowych
+smokach, by stworzyć
+Lodową smoczą stal używając czystego
+zimna ich mroźnego oddechu.
+<item><iceandfire:dragonforge_ice_brick 0 70 4 1.5>.
+<item><iceandfire:dragonforge_ice_input 0 90 4 1.5>.
+<item><iceandfire:dragonforge_ice_core 0 110 4 1.5> <item><iceandfire:dragonforge_ice_core 0 110 4 1.5>
+
+
+
+
+
+
+Ognista smocza stal podpala przeciwników
+do 15 sekund i zadaje dużą ilość obrażeń.
+Lodowa smocza stal zamienia cele
+w gigantyczny blok lodu. Oba
+rodzaje Smoczej stali zadają wysokie
+obrażenia i mogą z łatwością
+pokonać dużego smoka.
+Zbroja ze Smoczej stali zapewnia również
+zwiększoną ochronę przed
+atakami smoczego oddechu.
