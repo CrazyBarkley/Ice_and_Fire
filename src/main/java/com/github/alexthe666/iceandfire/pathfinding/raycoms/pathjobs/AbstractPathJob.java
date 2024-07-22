@@ -1308,7 +1308,8 @@ public abstract class AbstractPathJob implements Callable<Path> {
                     return true;
                 }
 
-                if (shape.isEmpty() || shape.getEnd(Direction.Axis.Y) <= 0.1 && !isLiquid((block)) && (block.getBlock() != Blocks.SNOW || block.get(SnowBlock.LAYERS) == 1)) {
+                // TODO: I'd be cool if dragons could squash multiple snow layers when walking over them
+                if (shape.isEmpty() || shape.getEnd(Direction.Axis.Y) <= 0.125 && !isLiquid((block)) && (block.getBlock() != Blocks.SNOW || block.get(SnowBlock.LAYERS) == 1)) {
                     final PathNodeType pathType = block.getAiPathNodeType(world, pos);
                     return pathType == null || pathType.getDanger() == null;
                 }
@@ -1358,7 +1359,10 @@ public abstract class AbstractPathJob implements Callable<Path> {
         if (circumventSizeCheck) {
             return isPassable(pos, false, parent) && isPassable(pos.up(), true, parent);
         } else {
-            Direction facingDir = getXZFacing(parentPos, pos).rotateY();
+            Direction facingDir = getXZFacing(parentPos, pos);
+            if (facingDir == Direction.DOWN || facingDir == Direction.UP)
+                return false;
+            facingDir = facingDir.rotateY();
             for (int i = 0; i <= entitySizeXZ; i++) {
                 for (int j = 0; j <= entitySizeY; j++) {
                     if (!isPassable(pos.offset(facingDir, i).up(j), false, parent)) {
@@ -1377,7 +1381,10 @@ public abstract class AbstractPathJob implements Callable<Path> {
         if (circumventSizeCheck) {
             return isPassable(pos, true, parent);
         } else {
-            Direction facingDir = getXZFacing(parentPos, pos).rotateY();
+            Direction facingDir = getXZFacing(parentPos, pos);
+            if (facingDir == Direction.DOWN || facingDir == Direction.UP)
+                return false;
+            facingDir = facingDir.rotateY();
             for (int i = 0; i <= entitySizeXZ; i++) {
                 for (int j = 0; j <= entitySizeY; j++) {
                     if (!isPassable(pos.offset(facingDir, i).up(j), false, parent) || pos.getY() <= parentPos.getY()) {
